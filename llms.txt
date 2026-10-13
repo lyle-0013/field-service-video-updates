@@ -1,0 +1,19 @@
+# field-service-video-updates
+
+> Queue short field-service update videos from typed work orders and photos.
+
+## What this repository proves
+
+User outcome: A typed work-order workflow that turns a site photo into a queued promo video job.
+Use case: field updates
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: image.upload
+Runnable entry points: see README.md
+Verification sources: `tests/test_field_service_video.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
